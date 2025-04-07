@@ -1,0 +1,29 @@
+.site-header{
+    background-color: var(--secondary-color);
+    display: flex;
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    justify-content: space-between;
+    border-bottom: 0.5px solid var(--border);
+}
+
+.logo {
+    width: 100%;
+}
+
+.site-header a {
+    display: flex;
+    align-items: center;
+    width: 8%;    
+    text-decoration: none; 
+}
+
+.site-header h1 { 
+    margin-left: -9%;
+    margin-top: 0.7%;      
+    font-size: 40px;       
+    font-weight: 400;
+    font-family: 'Bungee Tint', cursive;
+}

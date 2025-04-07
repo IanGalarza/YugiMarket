@@ -1,0 +1,143 @@
+.custom-alert{
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+/* Alerta de Enviar */
+
+.alert-box {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 12px;
+    width: 600px;
+    min-height: 40vh;
+    max-height: 80vh; 
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    z-index: 9999;
+    animation: fadeInScale 0.3s ease-out;
+}
+
+.alert-title {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-color);
+}
+
+.alert-content {
+    padding: 20px;
+    overflow-y: auto; 
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.field-group {
+    flex: 1;
+    background-color: var(--secondary-color);
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.field-group.full {
+    flex: 100%;
+}
+
+.field-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.field-value {
+    font-size: 14px;
+    word-break: break-word;
+    color: var(--text-color);
+}
+
+.comment-text {
+    max-height: unset;
+    overflow: unset;
+}
+
+
+/* Alerta de Cancelar */
+
+.custom-confirm {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.confirm-box {
+    background-color: var(--primary-color);
+    border-radius: 16px;
+    padding: 24px 32px;
+    max-width: 400px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    animation: fadeInScale 0.3s ease-out;
+}
+
+.confirm-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: var(--text-color);
+}
+
+.confirm-separator {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 8px 0 16px;
+}
+
+.confirm-description {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.confirm-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

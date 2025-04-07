@@ -1,0 +1,78 @@
+.form-buttons button {
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-confirm {
+    background-color: var(--btn-confirm);
+    color: var(--text-color);
+}
+
+.btn-confirm:hover {
+    background-color: var(--btn-confirm-hover);
+}
+
+.btn-cancel {
+    background-color: var(--btn-cancel);
+    color: var(--text-color); 
+}
+
+.btn-cancel:hover {
+    background-color: var(--btn-cancel-hover);
+}
+
+.btn-reset {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.btn-reset:hover {
+    background-color: var(--navbar-shallow-color);
+}
+
+/* Alert Buttons */
+
+.confirm-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.confirm-yes {
+    background-color: var(--btn-confirm);
+    color: var(--text-color);
+}
+
+.confirm-yes:hover {
+    background-color: var(--btn-confirm-hover);
+}
+
+.confirm-no {
+    background-color: var(--btn-cancel);
+    color: var(--text-color); 
+}
+
+.confirm-no:hover {
+    background-color: var(--btn-cancel-hover);
+}
+
+
+.alert-ok {
+    border: none;
+    background-color: var(--btn-confirm);
+    color: var(--text-color);
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 20px auto;
+    font-size: 15px;
+}
+
+.alert-ok:hover {
+    background-color: var(--btn-confirm-hover);
+}

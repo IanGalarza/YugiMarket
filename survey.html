@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="icon" type="image/png" href="img/yugiohlogo.png">
+
+    <link rel="stylesheet" href="css/alerts.css">
+
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/layouts/body-form.css">
+    <link rel="stylesheet" href="css/layouts/header.css">
+    <link rel="stylesheet" href="css/layouts/footer.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layouts/navBar.css">
+    <link rel="stylesheet" href="css/layouts/body-main.css">
+
+    <title>YugiMarket - Encuesta</title>
+</head>
+<body>
+    <header class ="site-header">
+        <a href="./index.html"><img class="logo" src="./img/yugiohlogo.png" alt="icon-bussines"></a>
+        <h1>YugiMarket</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="./index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="./normalMonster.html"><i class="fas fa-dragon"></i> Monstruo</a></li>
+                <li><a href="./spellCard.html"><i class="fas fa-hat-wizard"></i> Hechizo</a></li>
+                <li><a href="./trapCard.html"><i class="fas fa-skull-crossbones"></i> Trampa</a></li>
+                <li><a href="./ritualCard.html"><i class="fas fa-star-of-david"></i> Ritual</a></li>
+                <li><a href="./survey.html"><i class="fas fa-poll"></i> Encuesta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section id="form" class="formSection">
+            <h2 class="form-title">Encuesta</h2>
+            <form id="surveyForm" novalidate>
+                <div class="form-row double">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Escribí tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Escribí tu apellido">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fecha">Fecha de Nacimiento</label>
+                        <input type="date" id="fecha" name="fecha" placeholder="dd-mm-aaaa">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label class="radio-label">Género</label>
+                    <div class="form-options">
+                        <label><input type="radio" name="sexo" value="masculino"> Masculino</label>
+                        <label><input type="radio" name="sexo" value="femenino"> Femenino</label>
+                        <label><input type="radio" name="sexo" value="otro"> Otro</label>
+                        <label><input type="radio" name="sexo" value="prefiero no decirlo"> Prefiero no responder</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label class="radio-label">¿Cómo calificarías la página?</label>
+                    <div class="form-options column">
+                        <label><input type="radio" name="valoracion" value="Me encantó"> Me encantó</label>
+                        <label><input type="radio" name="valoracion" value="Cumple con mis expectativas"> Cumple con mis expectativas</label>
+                        <label><input type="radio" name="valoracion" value="Podría ser mejor"> Podría ser mejor</label>
+                        <label><input type="radio" name="valoracion" value="Mala"> Mala</label>
+                        <label><input type="radio" name="valoracion" value="Lamentable"> Lamentable</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="ejemplo@correo.com">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="comentario">Comentario</label>
+                        <textarea id="comentario" name="comentario" rows="4" placeholder="Dejanos tu comentario..."></textarea>
+                    </div>
+                </div>
+                <div class="form-buttons">
+                    <button type="submit" id="sendBtn" class="btn-confirm">Enviar</button>
+                    <button type="button" id="cancelBtn" class="btn-cancel">Cancelar</button>
+                    <button type="button" id="resetBtn" class="btn-reset">Restablecer</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="site-footer">
+        <p class="footer-text">&copy; 2025 | YugiMarket. Todos los derechos reservados.</p>
+        <p class="footer-text">Desarrollado por Ian Galarza - Aplicaciones Moviles - Universidad Nacional Arturo Jauretche.</p>
+    </footer>
+
+    <script src="./js/views/surveyEvents.js" type="module"></script>
+</body>
+</html>

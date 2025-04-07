@@ -1,0 +1,45 @@
+:root{
+    --primary-color: #181414;
+    --secondary-color: #212121;
+    --text-color-inverse: black;
+    --text-color: white;
+    --navbar-shallow-color: #374151;
+    --scroll-color: red;
+    --scroll-background: #1a1a1a;
+    --btn-confirm: #1a691d; 
+    --btn-confirm-hover: #388e3c;
+    --btn-cancel: #992219;
+    --btn-cancel-hover: #ec6565;
+    --error-color: #d32f2f;
+    --border: gray;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+/*scroll Global*/
+
+*::-webkit-scrollbar{
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--scroll-background);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-color);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
