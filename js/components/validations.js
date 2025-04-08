@@ -11,8 +11,8 @@ export const validations = {
     },
     fecha: {
         requiredMessage: "La fecha de nacimiento es obligatoria.",
-        pattern: /^\d{4}-\d{2}-\d{2}$/,
-        patternMessage: "Formato inválido. Ingrese una fecha con el formato dd-mm-aaaa."
+        pattern: /^(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-\d{4}$/,
+        patternMessage: "La fecha ingresada no es válida. Use el formato dd-mm-aaaa y asegúrese de que sea una fecha real."
     },
     sexo: {
         requiredMessage: "Seleccione una opción de género."
