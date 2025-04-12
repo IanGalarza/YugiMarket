@@ -9,6 +9,10 @@
 
     <link rel="icon" type="image/png" href="img/yugiohlogo.png">
 
+
+    <link rel="stylesheet" href="css/spinner.css">
+    <link rel="stylesheet" href="css/pagination.css">
+    <link rel="stylesheet" href="css/layouts/cart.css">
     <link rel="stylesheet" href="css/layouts/header.css">
     <link rel="stylesheet" href="css/layouts/footer.css">
     <link rel="stylesheet" href="css/main.css">
@@ -20,6 +24,11 @@
 </head>
 <body>
     <header class ="site-header">
+
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+
         <a href="./index.html"><img class="logo" src="./img/yugiohlogo.png" alt="icon-bussines"></a>
         <h1>YugiMarket</h1>
         <nav class="main-nav">
@@ -32,50 +41,37 @@
                 <li><a href="./survey.html"><i class="fas fa-poll"></i> Encuesta</a></li>
             </ul>
         </nav>
+        <div class="cart-icon-container">
+            <i class="fas fa-shopping-cart" id="cart-icon"></i>
+            <div id="cart-preview" class="cart-preview hidden">
+                <h3>Carrito</h3>
+                <ul id="cart-items" class="cart-items-list">
+
+                </ul>
+                <div class="cart-footer">
+                    <p>Total: $<span id="cart-total">0</span></p>
+                    <button id="clear-cart" class="clear-cart-button">Vaciar carrito</button>
+                </div>
+            </div>
+        </div>
+        
     </header>
 
     <main class="main-content">
         <section id="NormalCards" class="cardSection">
             <h2 class="product-header">Cartas de Monstruo</h2>
             <hr class="category-divider">
+
+            <div class="loading-spinner hidden"></div>
+
             <div class="cards-grid">
-                <article class="card">
-                    <img class="card-Img" src="./img/normalCards/BlueEyesWhiteDragon.jpg" alt="MonsterCard">
-                    <p>Blue-Eyes White Dragon</p>
-                </article>
-                <article class="card">
-                    <img class="card-Img" src="./img/normalCards/DarkMagician.jpg" alt="MonsterCard">
-                    <p>Dark Magician</p>
-                </article>
-                <article class="card">
-                    <img class="card-Img" src="./img/normalCards/MeteorDragon.jpg" alt="MonsterCard">
-                    <p>Meteor Dragon</p>
-                </article>
-                <article class="card">
-                    <img class="card-Img" src="./img/normalCards/summonedskull.jpg" alt="MonsterCard">
-                    <p>Summoned Skull</p>
-                </article>
-                <article class="card">
-                    <img class="card-Img" src="./img/normalCards/RedEyesBlackDragon.jpg" alt="MonsterCard">
-                    <p>Red-Eyes Black Dragon</p>
-                </article>
-                <article class="card">
-                    <img class="card-Img" src="./img/normalCards/GaiaTheFierceKnight.jpg" alt="MonsterCard">
-                    <p>Gaia The Fierce Knight</p>
-                </article>
-                <article class="card">
-                    <img class="card-Img" src="./img/normalCards/BattleOx.jpg" alt="MonsterCard">
-                    <p>Battle Ox</p>
-                </article>
-                <article class="card">
-                    <img class="card-Img" src="./img/normalCards/MysticalElf.jpg" alt="MonsterCard">
-                    <p>Mystical Elf</p>
-                </article>
-                <article class="card">
-                    <img class="card-Img" src="./img/normalCards/CurseOfDragon.jpg" alt="MonsterCard">
-                    <p>Curse Of Dragon</p>
-                </article>
+
             </div>
+            <div class="pagination">
+                <button class="prev-page">&lt;</button>
+                <span class="current-page">1</span>
+                <button class="next-page">&gt;</button>
+            </div>    
         </section>
     </main>
     
@@ -83,5 +79,9 @@
         <p class="footer-text">&copy; 2025 | YugiMarket. Todos los derechos reservados.</p>
         <p class="footer-text">Desarrollado por Ian Galarza - Aplicaciones Moviles - Universidad Nacional Arturo Jauretche.</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+
 </body>
 </html>

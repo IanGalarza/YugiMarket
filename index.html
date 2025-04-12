@@ -9,6 +9,8 @@
 
     <link rel="icon" type="image/png" href="img/yugiohlogo.png">
 
+    <link rel="stylesheet" href="css/layouts/banner.css">
+    <link rel="stylesheet" href="css/layouts/cart.css">
     <link rel="stylesheet" href="css/layouts/header.css">
     <link rel="stylesheet" href="css/layouts/footer.css">
     <link rel="stylesheet" href="css/main.css">
@@ -19,6 +21,11 @@
 </head>
 <body>
     <header class ="site-header">
+
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+
         <a href="./index.html"><img class="logo" src="./img/yugiohlogo.png" alt="icon-bussines"></a>
         <h1>YugiMarket</h1>
         <nav class="main-nav">
@@ -31,9 +38,30 @@
                 <li><a href="./survey.html"><i class="fas fa-poll"></i> Encuesta</a></li>
             </ul>
         </nav>
+        <div class="cart-icon-container">
+            <i class="fas fa-shopping-cart" id="cart-icon"></i>
+            <div id="cart-preview" class="cart-preview hidden">
+                <h3>Carrito</h3>
+                <ul id="cart-items" class="cart-items-list">
+
+                </ul>
+                <div class="cart-footer">
+                    <p>Total: $<span id="cart-total">0</span></p>
+                    <button id="clear-cart" class="clear-cart-button">Vaciar carrito</button>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main class="main-content">
+
+        <section id="hero-banner" class="hero-banner">
+            <div class="hero-slide">
+              <img src="./img/banner.jpg" alt="Bienvenido">
+              <h1>Bienvenido a YugiMarket</h1>
+            </div>
+        </section>
+          
         <section id="NormalCards" class="cardSection">
             <div class="category-header">
                 <h2>Cartas de Monstruo</h2>
@@ -52,7 +80,11 @@
                 <article class="card">
                     <img class="card-Img" src="./img/normalCards/MeteorDragon.jpg" alt="MonsterCard">
                     <p>Meteor Dragon</p>
-                </article>                   
+                </article>  
+                <article class="card">
+                    <img class="card-Img" src="./img/normalCards/summonedskull.jpg" alt="MonsterCard">
+                    <p>Summoned Skull</p>
+                </article>                 
             </div>
         </section>
 
@@ -74,6 +106,10 @@
                 <article class="card">
                     <img class="card-Img" src="./img/spellCards/Raigeki.jpg" alt="SpellCard">
                     <p>Raigeki</p>
+                </article>
+                <article class="card">
+                    <img class="card-Img" src="./img/spellCards/Polymerization.jpg" alt="MonsterCard">
+                    <p>Polymerization</p>
                 </article>
             </div>
         </section>
@@ -97,6 +133,10 @@
                     <img class="card-Img" src="./img/trapCards/TorrentialTribute.jpg" alt="TrapCard">
                     <p>Torrential Tribute</p>
                 </article>
+                <article class="card">
+                    <img class="card-Img" src="./img/trapCards/SkullDice.jpg" alt="MonsterCard">
+                    <p>Skull Dice</p>
+                </article>
             </div>
         </section>
 
@@ -113,11 +153,15 @@
                 </article>
                 <article class="card">
                     <img class="card-Img" src="./img/ritualCards/MagicianOfBlackChaos.jpg" alt="RitualCard">
-                    <p>Magician Of Black Chaos</p>
+                    <p>Magician of Black Chaos</p>
                 </article>
                 <article class="card">
                     <img class="card-Img" src="./img/ritualCards/HungryBurger.jpg" alt="RitualCard">
                     <p>Hungry Burger</p>
+                </article>
+                <article class="card">
+                    <img class="card-Img" src="./img/ritualCards/TheMaskedBeast.jpg" alt="MonsterCard">
+                    <p>The Masked Beast</p>
                 </article>
             </div>
         </section>
@@ -127,5 +171,10 @@
         <p class="footer-text">&copy; 2025 | YugiMarket. Todos los derechos reservados.</p>
         <p class="footer-text">Desarrollado por Ian Galarza - Aplicaciones Moviles - Universidad Nacional Arturo Jauretche.</p>
     </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+
 </body>
 </html>

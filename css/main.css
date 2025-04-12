@@ -3,7 +3,7 @@
     --secondary-color: #212121;
     --text-color-inverse: black;
     --text-color: white;
-    --navbar-shallow-color: #374151;
+    --navbar-shallow-color: #333;
     --scroll-color: red;
     --scroll-background: #1a1a1a;
     --btn-confirm: #1a691d; 
@@ -12,6 +12,8 @@
     --btn-cancel-hover: #ec6565;
     --error-color: #d32f2f;
     --border: gray;
+    --selected-card: #4020;
+    --selected-color-card: rgb(181, 185, 180);
 }
 
 *{
@@ -21,9 +23,14 @@
 }
 
 body {
-    background-color: var(--primary-color);
+    background-image: url('/img/bk.jpg');
     color: var(--text-color);
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.hidden {
+    display: none;
 }
 
 /*scroll Global*/

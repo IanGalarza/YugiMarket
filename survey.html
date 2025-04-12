@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="css/alerts.css">
 
+    <link rel="stylesheet" href="css/layouts/cart.css">
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/layouts/body-form.css">
     <link rel="stylesheet" href="css/layouts/header.css">
@@ -23,6 +24,11 @@
 </head>
 <body>
     <header class ="site-header">
+
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+
         <a href="./index.html"><img class="logo" src="./img/yugiohlogo.png" alt="icon-bussines"></a>
         <h1>YugiMarket</h1>
         <nav class="main-nav">
@@ -35,6 +41,19 @@
                 <li><a href="./survey.html"><i class="fas fa-poll"></i> Encuesta</a></li>
             </ul>
         </nav>
+        <div class="cart-icon-container">
+            <i class="fas fa-shopping-cart" id="cart-icon"></i>
+            <div id="cart-preview" class="cart-preview hidden">
+                <h3>Carrito</h3>
+                <ul id="cart-items" class="cart-items-list">
+
+                </ul>
+                <div class="cart-footer">
+                    <p>Total: $<span id="cart-total">0</span></p>
+                    <button id="clear-cart" class="clear-cart-button">Vaciar carrito</button>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main class="main-content">
@@ -104,6 +123,9 @@
         <p class="footer-text">Desarrollado por Ian Galarza - Aplicaciones Moviles - Universidad Nacional Arturo Jauretche.</p>
     </footer>
 
-    <script src="./js/views/surveyEvents.js" type="module"></script>
+    <script src="./js/components/surveyEvents.js" type="module"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+
 </body>
 </html>

@@ -61,7 +61,6 @@
     background-color: var(--btn-cancel-hover);
 }
 
-
 .alert-ok {
     border: none;
     background-color: var(--btn-confirm);

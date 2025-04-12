@@ -1,8 +1,8 @@
 .main-nav ul {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     list-style: none;
-    padding-top: 2%;
+    padding-top: 1.8%;
     
 }
 
@@ -18,11 +18,10 @@
 .main-nav li {
     padding: 5px;
     border-radius: 999px; 
-    border: 0.5px solid var(--border); 
+    border: none;
 }
 
-
 .main-nav li:hover {
-    color: var(--theme-color); 
     background-color: var(--navbar-shallow-color);
+    transform: translateY(-2px) scale(1.03);
 }
