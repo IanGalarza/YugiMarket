@@ -85,3 +85,11 @@ textarea {
 .form-group .error-message {
     margin-bottom: -16px;
 }
+
+/*Responsive */
+
+@media (max-width: 580px){
+    .form-buttons{
+        flex-direction: column;
+    }
+}
